@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://pay.360.cn/resource/js/lib/171.js"></script>
+    <script type="text/javascript" src="http://pay.360.cn/resource/js/component/ntpl.js"></script>
+    <link rel="stylesheet" type="text/css" href="select.css">
+</head>
+<body>
+<form>
+<select name="question" style="position: absolute;top:100px;left:200px;">
+		<option value="7">您最喜爱的明星？</option>
+		<option value="8">您最喜爱的城市？</option>
+		<option value="9">您父亲的生日？</option>
+		<option value="10">您最喜爱的食物？</option>
+		<option value="11">您初中英语老师的名字？</option>
+		<option value="12">您最喜爱哪款车？</option>
+</select>
+<select name="price">
+	<option value="5">5元</option>
+	<option value="15">15元</option>
+	<option value="20">20元</option>
+	<option value="25">25元</option>
+	<option value="30">30元</option>
+</select>
+
+<select name="group">
+	<optgroup label="我是A组">
+		<option value="0" data-icon="100px">选项零</option>
+		<option value="1">选项二</option>
+		<option value="2">选项二</option>
+		<option value="3">选项三</option>
+		<option value="4">选项四</option>
+		<option value="5">选项五</option>
+	</optgroup>
+	<optgroup label="我是B组">
+		<option value="mercedes">Mercedes</option>
+		<option value="audi">Audi</option>
+	</optgroup>
+</select>
+<input type="submit" value="click">
+</form>
+<script type="text/javascript" src="select.js"></script>
+<script type="text/javascript">
+$('select').selectbox();
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+.QPUI-selectbox {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    height: 22px;
+    line-height: 22px;
+    position: relative;
+    padding: 0;
+    text-align: left;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #DDD;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #B7B7B7;
+    *zoom: 1;
+    *overflow: visible;
+    outline: 0 none;
+    background: #fafafa;
+}
+.QPUI-selectbox:hover {
+    border: 1px solid #09E;
+}
+.QPUI-selectbox::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+select[disabled] + .QPUI-selectbox,
+select[disabled] + .QPUI-selectbox:hover {
+    color: #ccc;
+    border: 1px solid #B7B7B7;
+    cursor: default;
+    box-shadow: none;
+    opacity: .7;
+    user-select:none
+}
+.QPUI-selectbox-inner {
+    padding: 0 0 0 5px;
+    margin-right: 15px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    *background: #fafafa;
+    *filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#e5e5e5',GradientType=0 );
+}
+.QPUI-selectbox .QPUI-selectbox-icon {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -2px;
+    border-top: 5px solid #A7A7A7;
+    border-left: 5px dashed transparent;
+    border-right: 5px dashed transparent;
+    border-bottom: 0 none;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow:hidden;
+    line-height:0;
+    font-size: 0;
+}
+.QPUI-selectbox-open .QPUI-selectbox-icon {
+    margin-top: -3px;
+    border-top: 0 none;
+    border-bottom: 5px solid #A7A7A7;
+}
+.QPUI-selectbox-dropdown {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    list-style: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    font-family: Helvetica, arial, sans-serif;
+    background: #FFF;
+    border: 1px solid #DCDCDC;
+}
+
+.QPUI-selectbox-optgroup,
+.QPUI-selectbox-option {
+    margin: 0;
+    padding: 8px 10px;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #333;
+    background: transparent;
+    outline: 0 none;
+}
+.QPUI-selectbox-optgroup {
+    cursor: default;
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+}
+.QPUI-selectbox-option:hover {
+    background: #eee;
+}
+.QPUI-selectbox-option:focus {
+    outline: 0 none;
+}
+.QPUI-selectbox-dropdown .QPUI-selectbox-selected,
+.QPUI-selectbox-dropdown .QPUI-selectbox-selected:hover {
+    background: #394D7E;
+    color: #fff;
+}
+.QPUI-selectbox-dropdown .QPUI-selectbox-disabled,
+.QPUI-selectbox-dropdown .QPUI-selectbox-disabled:hover {
+    color: #ccc;
+    cursor: default;
+    background: #fff;
+}
+
+.QPUI-popup-top .QPUI-selectbox-dropdown,
+.QPUI-popup-top-left .QPUI-selectbox-dropdown,
+.QPUI-popup-top-right .QPUI-selectbox-dropdown {
+    top: -2px;
+}
+.QPUI-popup-bottom .QPUI-selectbox-dropdown,
+.QPUI-popup-bottom-left .QPUI-selectbox-dropdown,
+.QPUI-popup-bottom-right .QPUI-selectbox-dropdown {
+    top: 2px;
+}
